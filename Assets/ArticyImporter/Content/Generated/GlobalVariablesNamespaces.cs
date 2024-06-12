@@ -15,3 +15,48 @@ using System.Collections;
 using UnityEngine;
 
 
+namespace Articy.Zombo.GlobalVariables
+{
+    
+    
+    [Serializable()]
+    public class HordeMaster1Decisions : IArticyNamespace
+    {
+        
+        [SerializeField()]
+        private BaseGlobalVariables _VariableStorage;
+        
+        // 
+        public bool HM1GateOpen
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(0);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(0, value);
+            }
+        }
+        
+        // 
+        public bool HM1AllowEntry
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(1);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(1, value);
+            }
+        }
+        
+        public void RegisterVariables(BaseGlobalVariables aStorage)
+        {
+            _VariableStorage = aStorage;
+            aStorage.RegisterVariable("HordeMaster1Decisions.HM1GateOpen", false);
+            aStorage.RegisterVariable("HordeMaster1Decisions.HM1AllowEntry", false);
+        }
+    }
+}

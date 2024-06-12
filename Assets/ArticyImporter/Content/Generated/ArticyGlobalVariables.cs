@@ -24,11 +24,25 @@ namespace Articy.Zombo.GlobalVariables
     public class ArticyGlobalVariables : BaseGlobalVariables
     {
         
+        [SerializeField()]
+        [HideInInspector()]
+        private HordeMaster1Decisions mHordeMaster1Decisions = new HordeMaster1Decisions();
+        
         #region Initialize static VariableName set
         static ArticyGlobalVariables()
         {
+            variableNames.Add("HordeMaster1Decisions.HM1GateOpen");
+            variableNames.Add("HordeMaster1Decisions.HM1AllowEntry");
         }
         #endregion
+        
+        public HordeMaster1Decisions HordeMaster1Decisions
+        {
+            get
+            {
+                return mHordeMaster1Decisions;
+            }
+        }
         
         public static ArticyGlobalVariables Default
         {
@@ -40,6 +54,7 @@ namespace Articy.Zombo.GlobalVariables
         
         public override void Init()
         {
+            HordeMaster1Decisions.RegisterVariables(this);
         }
         
         public static ArticyGlobalVariables CreateGlobalVariablesClone()

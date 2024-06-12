@@ -23,9 +23,31 @@ namespace Articy.Zombo.GlobalVariables
     public partial class ArticyScriptFragments : BaseScriptFragments, ISerializationCallbackReceiver
     {
         
+        #region Script fragments
+        /// <summary>
+        /// ObjectID: 0x100000000000198
+        /// Articy Object ref: articy://localhost/view/df73e6d1-dbc0-4762-8f57-4a65f5b184f6/72057594037928344?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_720575940379282080x100000000000198Expression(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.HordeMaster1Decisions.HM1GateOpen = true;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x10000000000019D
+        /// Articy Object ref: articy://localhost/view/df73e6d1-dbc0-4762-8f57-4a65f5b184f6/72057594037928349?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_720575940379282080x10000000000019DExpression(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.HordeMaster1Decisions.HM1AllowEntry = true;
+        }
+        #endregion
+        
         #region Unity serialization
         public virtual void OnAfterDeserialize_0x100000000000110()
         {
+            Instructions.Add(360981372u, this.Script_720575940379282080x100000000000198Expression);
+            Instructions.Add(494165608u, this.Script_720575940379282080x10000000000019DExpression);
         }
         #endregion
     }

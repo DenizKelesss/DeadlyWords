@@ -47,12 +47,57 @@ MonoBehaviour:
     parent: 72057594037927937
     technicalName: GlobalVariables
     articyType: GlobalVariables
+    childCount: 1
+  - id: 72057594037928341
+    parent: 216172782840400980
+    technicalName: 
+    articyType: VariableSet
     childCount: 0
   - id: 216172783251375095
     parent: 72057594037927937
     technicalName: Flow
     articyType: Flow
-    childCount: 1
+    childCount: 2
+  - id: 72057594037928295
+    parent: 216172783251375095
+    technicalName: Dlg_00789541
+    articyType: Dialogue
+    childCount: 7
+  - id: 72057594037928319
+    parent: 72057594037928295
+    technicalName: DFr_292E9C97
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037928325
+    parent: 72057594037928295
+    technicalName: DFr_EF7B7D66
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037928333
+    parent: 72057594037928295
+    technicalName: DFr_AEE52C2F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037928344
+    parent: 72057594037928295
+    technicalName: Ins_48D31D98
+    articyType: Instruction
+    childCount: 0
+  - id: 72057594037928349
+    parent: 72057594037928295
+    technicalName: Ins_686FB173
+    articyType: Instruction
+    childCount: 0
+  - id: 72057594037928354
+    parent: 72057594037928295
+    technicalName: DFr_A21FE141
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037928361
+    parent: 72057594037928295
+    technicalName: DFr_6726D15C
+    articyType: DialogueFragment
+    childCount: 0
   - id: 72057594037928229
     parent: 216172783251375095
     technicalName: Dlg_808572D2
@@ -92,7 +137,12 @@ MonoBehaviour:
     parent: 72057594037927937
     technicalName: Entities
     articyType: Entities
-    childCount: 2
+    childCount: 3
+  - id: 72057594037928307
+    parent: 216172785005863603
+    technicalName: Ntt_9B376073
+    articyType: Entity
+    childCount: 0
   - id: 72057594037928221
     parent: 216172785005863603
     technicalName: Ntt_20BC0770
@@ -323,25 +373,6 @@ MonoBehaviour:
     technicalName: Ufo_5702D8A3
     articyType: AssetsUserFolder
     childCount: 0
---- !u!114 &-45644513900295954
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af3eb1c8993c3e147a5501d689e16a98, type: 3}
-  m_Name: DefaultGlobalVariables
-  m_EditorClassIdentifier: 
-  mBoolVariableCache: []
-  mIntVariableCache: []
-  mStringVariableCache: []
-  mLiveBoolVariableCache: []
-  mLiveIntVariableCache: []
-  mLiveStringVariableCache: []
-  mIsInitialized: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,13 +394,40 @@ MonoBehaviour:
     mId: df73e6d1-dbc0-4762-8f57-4a65f5b184f6
     mTechnicalName: Zombo
   mImportedAssets: []
-  mDefaultGlobalVariables: {fileID: -45644513900295954}
-  mScriptFragments: {fileID: 5038793873454668136}
+  mDefaultGlobalVariables: {fileID: 630916103239825703}
+  mScriptFragments: {fileID: 1302483933330159297}
   mPackages:
   - PackageId: 72057594037928208
     PackageName: All objects
     PackagePath: package_0x100000000000110
     mIsDefaultPackage: 1
+--- !u!114 &630916103239825703
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af3eb1c8993c3e147a5501d689e16a98, type: 3}
+  m_Name: DefaultGlobalVariables
+  m_EditorClassIdentifier: 
+  mBoolVariableCache:
+  - mFullQualifiedName: HordeMaster1Decisions.HM1GateOpen
+    mVar:
+      values: 00
+  - mFullQualifiedName: HordeMaster1Decisions.HM1AllowEntry
+    mVar:
+      values: 00
+  mIntVariableCache: []
+  mStringVariableCache: []
+  mLiveBoolVariableCache: []
+  mLiveIntVariableCache: []
+  mLiveStringVariableCache: []
+  mIsInitialized: 1
+  mHordeMaster1Decisions:
+    _VariableStorage: {fileID: 630916103239825703}
 --- !u!114 &974809838698625889
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -391,7 +449,7 @@ MonoBehaviour:
     mIsVoiceOver: 0
   mThrowOnMissingText: 0
   mClearOnLanguageSwitch: 1
---- !u!114 &5038793873454668136
+--- !u!114 &1302483933330159297
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}

@@ -14,23 +14,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mLocalizedStringsKeys:
   - Dlg_808572D2.DisplayName
+  - Dlg_00789541.DisplayName
   - DFr_077A9FB7.Text
   - DFr_E98E75D2.Text
   - DFr_FBAD06F6.Text
   - DFr_77F6F426.Text
   - DFr_345206F4.Text
   - DFr_AC0819C7.Text
+  - DFr_292E9C97.Text
+  - DFr_EF7B7D66.Text
+  - DFr_AEE52C2F.Text
+  - DFr_A21FE141.Text
+  - DFr_6726D15C.Text
   - Ntt_20BC0770.DisplayName
   - Ntt_C8A804A8.DisplayName
+  - Ntt_9B376073.DisplayName
   mLocalizedStringsValues:
   - Zombo1
+  - HordeMaster#1
   - Arrrghhh, hello fleshhhh
   - Ewww, disgusting!
   - Hello zombie person
   - Okay then.
   - You gonna eat me or anything?
   - this is option 4, also yer a zomb...
+  - Waarrrgghh! Approah flesh...
+  - Woah, you're one disgusting zombie...
+  - Oh, hello there
+  - Rude flesh... I eat you...
+  - Kind flesh... I let you go...
   - MainChar
   - Zombo1
+  - HordeMaster#1
   mLocalizedAudioAssetsKeys: []
   mLocalizedAudioAssetsValues: 

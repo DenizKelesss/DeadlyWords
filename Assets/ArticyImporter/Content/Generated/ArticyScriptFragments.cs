@@ -20,7 +20,7 @@ namespace Articy.Zombo.GlobalVariables
 {
     
     
-    [Articy.Unity.ArticyCodeGenerationHashAttribute(638531360430626905)]
+    [Articy.Unity.ArticyCodeGenerationHashAttribute(638537930819878592)]
     public partial class ArticyScriptFragments : BaseScriptFragments, ISerializationCallbackReceiver
     {
         
