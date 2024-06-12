@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Scene1Shifter : MonoBehaviour
 {
+    [SerializeField] private Player player;
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
+            player.SavePlayer();
             SceneManager.LoadScene("Level2");
         }
     }

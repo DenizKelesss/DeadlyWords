@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
         {
             Die();
         }
-        SavePlayer(); // Save player state (including health and scene) immediately after taking damage
+        //SavePlayer(); // Save player state (including health and scene) immediately after taking damage
     }
 
     void Die()
